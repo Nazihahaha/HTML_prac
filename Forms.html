@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forms</title>
+    </head>
+
+    <body>
+        <h1 style="color: rgb(125, 96, 230)">Forms Prac</h1>
+                                                                                                  <!--suggests autocomplete-->
+        <form action="http://www.learnstack.in/validaiton.php" method="POST"                      autocomplete="on"           enctype="multipart/form-data" >
+            <!--action takes to this page after login-->     <!--Use post to send information                                it is utf-8 by default, 
+                                                                                                                              multipart is important for file upload
+                                                               in hidden form, 
+                                                               unlike GET that displays info
+                                                               in the url-->
+
+            <label>Email:</label><br>
+            <!--Labeling the text box of form-->
+            <input type="email" name="email"><br>
+            <!--type checks if email given in correct format and
+             name checks with server where to put the information-->
+
+            <label>Password:</label><br>
+            <input type="password" name="password"><br>
+            <!--write password in hidden form and name checks with server where to
+            put the information-->
+
+            <input type="submit" name="" value="Login">
+                                        <!--changes the button name-->
+        </form>
+    </body>
+</html>
